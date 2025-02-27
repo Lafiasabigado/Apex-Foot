@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Apex Foot",
   description: "Agency dedicated to promoting football talents",
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 export default function RootLayout({
