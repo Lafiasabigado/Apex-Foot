@@ -71,7 +71,7 @@ export default function Navbar() {
 
         {/* Menu Mobile */}
         {isOpen && (
-          <div className='md:hidden space-y-4 py-4 bg-white dark:bg-gray-900'>
+          <div className='md:hidden space-y-2 py-4 bg-white dark:bg-gray-900'>
             {links.map((link) => (
               <Link 
                 key={link.path} 
@@ -80,7 +80,7 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 { link.path === "/signin" ? 
-                 <Button variant="outline" className="rounded-full border-none bg-blue-500 text-white hover:bg-blue-600 py-2 px-4">
+                 <Button variant="outline" className="rounded-md sm:rounded-full border-none bg-blue-500 text-white hover:bg-blue-600">
                    Se connecter
                  </Button> : link.name
                 }

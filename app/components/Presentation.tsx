@@ -12,17 +12,17 @@ const Presentation = () => {
           <div className='absolute  inset-0 bg-black/50'></div>
           
           <div className='p-10 text-left relative z-10 text-gray-300'>
-            <h1 className='text-4xl font-bold mb-6 text-gray-300'>Apex Foot</h1>
+            <h1 className='text-4xl font-bold mb-6 text-gray-300 uppercase'>Apex Foot</h1>
             <p className='mb-8 text-lg text-gray-300'>
-              Apex Foot est une agence dédiée à la mise en valeur des footballeurs talentueux. 
-              Nous les aidons à se faire repérer, à développer leur image et à booster leur 
-              carrière grâce à notre expertise et notre réseau de partenaires.
+              Nous somme une agence dédiée à la mise en valeur des footballeurs talentueux. 
             </p>
-            <div className='space-x-4'>
+            <p className='mb-8 text-lg text-gray-300'> Nous les aidons à se faire repérer, à développer leur image et à booster leur 
+            carrière grâce à notre expertise.</p>
+            <div className='flex justify-start gap-4'>
               <button className='bg-blue-600 hover:bg-blue-700 font-bold py-3 px-6 rounded-lg transition duration-300'>
                 Découvrir nos services
               </button>
-              <button className='bg-transparent hover:bg-white/10 font-bold py-3 px-6 rounded-lg border-2 border-white transition duration-300'>
+              <button className='bg-transparent hover:bg-white/10 font-bold py-3 px-6 rounded-lg border-2 border-white transition duration-300 mx-2'>
                 Nous contacter
               </button>
             </div>
