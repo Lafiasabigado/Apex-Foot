@@ -52,7 +52,7 @@ export default function Navbar() {
                 data-aos-delay={index * 100}
               > 
                 { link.path === "/signin" ? 
-                  <Button variant="outline" className="rounded-full border-none bg-blue-500 text-white hover:bg-blue-600">
+                  <Button variant="outline" className="rounded-md border-none bg-blue-500 text-white hover:bg-blue-600">
                    Se connecter
                   </Button> : link.name
                 }
