@@ -2,7 +2,7 @@ import React from 'react'
 
 const Presentation = () => {
   return (
-    <div className='pt-30 pb-20'>
+    <div className='pt-30 pb-30'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div 
           className='grid grid-cols-1 items-center justify-center h-screen w-full gap-10 rounded-xl bg-cover bg-center bg-no-repeat min-h-[500px] relative overflow-hidden' 
