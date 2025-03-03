@@ -18,7 +18,7 @@ const Presentation = () => {
             </p>
             <p className='mb-8 text-lg text-gray-300'> Nous les aidons à se faire repérer, à développer leur image et à booster leur 
             carrière grâce à notre expertise.</p>
-            <div className='flex justify-start gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-4'>
               <button className='bg-blue-600 hover:bg-blue-700 font-bold py-3 px-6 rounded-lg transition duration-300'>
                 Découvrir nos services
               </button>
