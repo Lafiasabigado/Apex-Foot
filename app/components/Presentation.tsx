@@ -18,11 +18,11 @@ const Presentation = () => {
             </p>
             <p className='mb-8 text-lg text-gray-300'> Nous les aidons à se faire repérer, à développer leur image et à booster leur 
             carrière grâce à notre expertise.</p>
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4'>
               <button className='bg-blue-600 hover:bg-blue-700 font-bold py-3 px-6 rounded-lg transition duration-300'>
                 Découvrir nos services
               </button>
-              <button className='bg-transparent hover:bg-white/10 font-bold py-3 px-6 rounded-lg border-2 border-white transition duration-300 mx-2'>
+              <button className='bg-transparent hover:bg-white/10 font-bold py-3 px-6 rounded-lg border-2 border-white transition duration-300'>
                 Nous contacter
               </button>
             </div>
