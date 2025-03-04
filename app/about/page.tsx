@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 
@@ -9,7 +11,7 @@ const About = () => {
           <div className='relative w-full h-[400px] hover:scale-105 transition-all duration-300'>
             <Image 
               src="/player4.jpg" 
-              alt="Football training" 
+              alt="Football Player" 
               fill 
               className="object-cover rounded-lg"
               priority
