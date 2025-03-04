@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Sign from "../signin/page";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const links = [
@@ -17,8 +18,8 @@ export default function Navbar() {
       name: "À propos",
     },
     {
-      path: "/services",
-      name: "Nos Services",
+      path: "/contact",
+      name: "Contact",
     },
     {
       path: "/signin",
@@ -51,10 +52,8 @@ export default function Navbar() {
                 data-aos="fade-down"
                 data-aos-delay={index * 100}
               > 
-                { link.path === "/signin" ? 
-                  <Button variant="outline" className="rounded-md border-none bg-blue-500 text-white hover:bg-blue-600">
-                   Se connecter
-                  </Button> : link.name
+                { link.path === "/signin" ?
+                    <Sign /> : link.name
                 }
               </Link>
             ))}
@@ -80,9 +79,7 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
               >
                 { link.path === "/signin" ? 
-                 <Button variant="outline" className="rounded-md sm:rounded-full border-none bg-blue-500 text-white hover:bg-blue-600">
-                   Se connecter
-                 </Button> : link.name
+                 <Sign /> : link.name
                 }
               </Link>
             ))}
