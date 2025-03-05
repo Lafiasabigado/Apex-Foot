@@ -66,20 +66,6 @@ const Services = () => {
         }
       ];
     
-      const team = [
-        {
-          name: "Thomas Martin",
-          role: "Fondateur & Agent FIFA",
-          image: "/team/thomas.jpg",
-          description: "15 ans d'expérience dans le scouting international",
-        },
-        {
-          name: "Sarah Durant",
-          role: "Responsable Relations Clubs",
-          image: "/team/sarah.jpg",
-          description: "Ex-joueuse professionnelle et agent certifiée",
-        },
-      ];
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4">
       <div className="max-w-7xl mx-auto">
