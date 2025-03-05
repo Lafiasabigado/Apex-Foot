@@ -13,7 +13,7 @@ const Presentation = () => {
           
           <div className='p-10 text-left relative z-10 text-gray-300'>
             <h1 className='text-3xl font-bold mb-6 uppercase'>Apex Foot</h1>
-            <p className='mb-8'>
+            <p className='mb-8 text-md'>
               Nous somme une agence dédiée à la mise en valeur des footballeurs talentueux. 
             </p>
             <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4'>
