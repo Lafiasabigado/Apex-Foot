@@ -8,8 +8,8 @@ export async function GET() {
     }
     const data = await response.json();
     
-    // Vérifions et nettoyons les données des joueurs
-    const cleanedResults = data.results.map(player => ({
+    
+    const cleanedResults = data.results.map((player: any) => ({
       ...player,
       image: player.image?.startsWith('http') ? player.image : `https://res.cloudinary.com${player.image}`
     }));
