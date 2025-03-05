@@ -62,7 +62,7 @@ const Players = () => {
             {players.map((player, index) => (
               <div 
                 key={`${player.firstname}-${player.lastname}-${index}`} 
-                className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden"
+                className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
                 <div className="relative h-48 w-full bg-gray-200">
                   <Image
