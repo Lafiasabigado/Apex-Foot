@@ -12,8 +12,8 @@ const Presentation = () => {
           <div className='absolute  inset-0 bg-black/50'></div>
           
           <div className='p-10 text-left relative z-10 text-gray-300'>
-            <h1 className='text-4xl font-bold mb-6 text-gray-300 uppercase'>Apex Foot</h1>
-            <p className='mb-8 text-lg text-gray-300'>
+            <h1 className='text-3xl font-bold mb-6 uppercase'>Apex Foot</h1>
+            <p className='mb-8'>
               Nous somme une agence dédiée à la mise en valeur des footballeurs talentueux. 
             </p>
             <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4'>

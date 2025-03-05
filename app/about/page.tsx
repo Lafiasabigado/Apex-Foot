@@ -14,6 +14,7 @@ const About = () => {
               Depuis sa création, Apex Foot s'engage à accompagner les jeunes talents et les joueurs 
               professionnels dans leur évolution. Notre mission est de leur offrir une visibilité 
               accrue et de leur ouvrir les portes des clubs.
+              Nous les aidons à se faire repérer, à développer leur image et à booster leur carrière grâce à notre expertise et notre réseau de partenaires.
             </p>
           </div>
           <div className='relative w-full h-[400px] hover:scale-105 transition-all duration-300'>
