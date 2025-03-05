@@ -10,6 +10,7 @@ const Page = () => {
       <Navbar />
       <Presentation />
       <About />
+      <Services />
       <Players />
     </div>
   )

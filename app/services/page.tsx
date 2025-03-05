@@ -3,29 +3,67 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import {
+  Trophy,
+  Users,
+  Target,
+  Dumbbell,
+  Heart,
+  Brain,
+  Shield,
+  TrendingUp
+} from "lucide-react"
 
 const Services = () => {
     const services = [
         {
-          title: "Mise en relation avec des clubs",
-          description: "Accédez à notre réseau de clubs partenaires pour développer votre carrière",
-          icon: "🤝",
+          title: "Formation d'Elite",
+          description: "Programme d'entraînement personnalisé pour développer les talents de demain",
+          icon: <Trophy className="w-8 h-8 text-blue-500" />,
+          color: "blue"
         },
         {
-          title: "Coaching & Préparation mentale",
-          description: "Bénéficiez d'un accompagnement personnalisé pour atteindre votre plein potentiel",
-          icon: "🎯",
+          title: "Coaching Personnel",
+          description: "Accompagnement individuel pour atteindre vos objectifs sportifs",
+          icon: <Users className="w-8 h-8 text-green-500" />,
+          color: "green"
         },
         {
-          title: "Médiatisation et gestion d'image",
-          description: "Développez votre image et votre présence médiatique",
-          icon: "📱",
+          title: "Préparation Physique",
+          description: "Optimisation des performances physiques et prévention des blessures",
+          icon: <Dumbbell className="w-8 h-8 text-purple-500" />,
+          color: "purple"
         },
         {
-          title: "Analyse et statistiques",
-          description: "Suivez vos performances grâce à des outils d'analyse avancés",
-          icon: "📊",
+          title: "Analyse Tactique",
+          description: "Étude approfondie du jeu et développement stratégique",
+          icon: <Target className="w-8 h-8 text-red-500" />,
+          color: "red"
         },
+        {
+          title: "Suivi Médical",
+          description: "Surveillance médicale régulière et récupération optimale",
+          icon: <Heart className="w-8 h-8 text-pink-500" />,
+          color: "pink"
+        },
+        {
+          title: "Préparation Mentale",
+          description: "Renforcement mental et gestion du stress en compétition",
+          icon: <Brain className="w-8 h-8 text-indigo-500" />,
+          color: "indigo"
+        },
+        {
+          title: "Protection des Joueurs",
+          description: "Encadrement juridique et gestion de carrière",
+          icon: <Shield className="w-8 h-8 text-yellow-500" />,
+          color: "yellow"
+        },
+        {
+          title: "Développement de Carrière",
+          description: "Accompagnement dans l'évolution professionnelle",
+          icon: <TrendingUp className="w-8 h-8 text-emerald-500" />,
+          color: "emerald"
+        }
       ];
     
       const team = [
@@ -43,60 +81,46 @@ const Services = () => {
         },
       ];
   return (
-    <div>
-        {/* Services */}
-      <section className="py-16 mb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center uppercase text-blue-500 mb-12">Nos Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-md"
-              >
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
-              </motion.div>
-            ))}
-          </div>
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h1 className="text-2xl font-bold uppercase text-blue-500 sm:text-4xl mb-4">
+            Nos Services
+          </h1>
+          <p className=" text-gray-600 max-w-2xl mx-auto">
+            Découvrez notre gamme complète de services dédiés au développement 
+            et à l'excellence dans le football professionnel
+          </p>
         </div>
-      </section>
 
-      {/* Équipe */}
-      <section className="bg-gray-50 py-16 mb-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Notre Équipe</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {team.map((member, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-lg flex items-center space-x-4"
-              >
-                <div className="relative w-24 h-24 flex-shrink-0">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover rounded-full"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold">{member.name}</h3>
-                  <p className="text-blue-500">{member.role}</p>
-                  <p className="text-gray-600 mt-2">{member.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 group"
+            >
+              <div className={`mb-4 transform group-hover:scale-110 transition-transform duration-300`}>
+                {service.icon}
+              </div>
+              
+              <h3 className={`text-xl font-bold mb-3 text-gray-900 group-hover:text-${service.color}-500 transition-colors duration-300`}>
+                {service.title}
+              </h3>
+              
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {service.description}
+              </p>
+
+              <div className="mt-4 flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 cursor-pointer">
+                En savoir plus
+                <svg className="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </div>
     </div>
   )
 }
