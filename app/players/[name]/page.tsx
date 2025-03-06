@@ -24,7 +24,7 @@ interface PageProps {
   searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default function PlayerDetail({ params, searchParams }: PageProps) {
+export default function PlayerDetail({ params }: any) {
   const [player, setPlayer] = useState<Player | null>(null)
   const [loading, setLoading] = useState(true)
 
