@@ -17,7 +17,14 @@ interface Player {
   image: string;
 }
 
-export default function PlayerDetail({ params }: { params: { name: string } }) {
+interface PageProps {
+  params: {
+    name: string;
+  };
+  searchParams: { [key: string]: string | string[] | undefined };
+}
+
+export default function PlayerDetail({ params, searchParams }: PageProps) {
   const [player, setPlayer] = useState<Player | null>(null)
   const [loading, setLoading] = useState(true)
 
