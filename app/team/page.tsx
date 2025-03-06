@@ -24,9 +24,20 @@ const Team = () => {
       speciality: "Développement Full Stack",
     },
     {
-      name: "Sarah Durant",
+      name: "Nel Nelio",
+      role: "Co-Fondateur & Développeur web",
+      image: "/team/nelo.jpg",
+      description: "Ex-joueur professionnelle et agent certifiée",
+      stats: [
+        { icon: <Code className="w-5 h-5 text-blue-500" />, value: "5+", label: "Années d'expérience" },
+        { icon: <Globe className="w-5 h-5 text-green-500" />, value: "8+", label: "Projets réalisés" },
+      ],
+      speciality: "Développement Front-end",
+    },
+    {
+      name: "Sarah Jacob",
       role: "Responsable Relations Clubs",
-      image: "/team/lafia.png",
+      image: "/team/sara.jpg",
       description: "Ex-joueuse professionnelle et agent certifiée",
       stats: [
         { icon: <Users className="w-5 h-5 text-purple-500" />, value: "80+", label: "Clubs partenaires" },
@@ -37,7 +48,7 @@ const Team = () => {
     {
       name: "Fadil El Khattabi",
       role: "Responsable Gestion des joueurs",
-      image: "/team/lafia.png",
+      image: "/team/fadil.jpg",
       description: "Ex-joueur professionnelle et agent certifiée",
       stats: [
         { icon: <Users className="w-5 h-5 text-yellow-500" />, value: "100+", label: "Joueurs gérés" },
@@ -45,17 +56,6 @@ const Team = () => {
       ],
       speciality: "Gestion de carrière",
     },
-    {
-      name: "Nel Nelio",
-      role: "Co-Fondateur & Développeur web",
-      image: "/team/lafia.png",
-      description: "Ex-joueur professionnelle et agent certifiée",
-      stats: [
-        { icon: <Code className="w-5 h-5 text-blue-500" />, value: "5+", label: "Années d'expérience" },
-        { icon: <Globe className="w-5 h-5 text-green-500" />, value: "8+", label: "Projets réalisés" },
-      ],
-      speciality: "Développement Front-end",
-    }
   ]
 
   return (
