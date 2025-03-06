@@ -5,6 +5,7 @@ import About from './about/page'
 import Services from './services/page'
 import Players from './players/page'
 import Team from './team/page'
+import Contact from './contact/page'
 
 const Page = () => {
   return (
@@ -15,6 +16,7 @@ const Page = () => {
       <Services />
       <Players />
       <Team />
+      <Contact />
     </div>
   )
 }
