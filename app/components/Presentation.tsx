@@ -81,7 +81,7 @@ const Presentation = () => {
               {/* Statistiques */}
               <div className='grid grid-cols-4 md:grid-cols-4 gap-6 mt-16'>
                 { stats.map((stat, index) => (
-                  <div key={index} className='font-bold'>
+                  <div key={index} className='font-semibold'>
                     <p className='text-xl md:text-2xl text-blue-400'>{ stat.index != 4 ? stat.value+'+' : stat.value+'%' }</p>
                     <p className='text-xs text-gray-400 mt-1 uppercase tracking-wider'>{stat.label}</p>
                   </div>
