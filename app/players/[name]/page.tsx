@@ -75,13 +75,13 @@ export default function PlayerDetail({ params }: { params: { name: string } }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link 
           href="/players" 
-          className="inline-flex items-center text-blue-500 hover:text-blue-600 mb-8"
+          className="inline-flex items-center text-blue-500 hover:text-blue-600 py-10"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Retour aux joueurs
+          Retour à la liste des joueurs
         </Link>
 
-        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+        <div className="bg-white rounded-md shadow-md overflow-hidden">
           <div className="md:flex">
             {/* Image Section */}
             <div className="md:w-1/3">
