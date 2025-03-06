@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface Player {
   firstname: string;
@@ -95,12 +96,14 @@ const Players = () => {
                       </span>
                     </div>
                   </div>
-                  <p className="mb-4  text-xl font-bold text-gray-800">{player.nationality}</p>
-                  <Button 
-                    className="bg-blue-500 mx-auto hover:bg-blue-700 text-white font-medium py-2 rounded-md transition-colors duration-200"
-                  >
-                    Voir le profil
-                  </Button>
+                  <p className="mb-4 text-xl font-bold text-gray-800">{player.nationality}</p>
+                  <Link href={`/players/${player.firstname}`}>
+                    <Button 
+                      className="bg-blue-500 mx-auto hover:bg-blue-700 text-white font-medium py-2 rounded-md transition-colors duration-200"
+                    >
+                      Voir le profil
+                    </Button>
+                  </Link>
                 </div>
               </div>
             ))}
