@@ -81,7 +81,7 @@ export default function PlayerDetail({ params }: { params: { name: string } }) {
           Retour à la liste des joueurs
         </Link>
 
-        <div className="bg-white rounded-md shadow-md overflow-hidden">
+        <div className="bg-white rounded-md shadow-sm overflow-hidden">
           <div className="md:flex">
             {/* Image Section */}
             <div className="md:w-1/3">
