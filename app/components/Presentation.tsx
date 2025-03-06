@@ -24,7 +24,7 @@ const Presentation = () => {
     },
     {
       value:95,
-      label:"Satisfaction",
+      label:"Contrats",
       index: 4
     }
   ]
@@ -49,9 +49,9 @@ const Presentation = () => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3 }}
-                className='text-2xl md:text-4xl font-bold mb-4 text-white tracking-wider'
+                className='text-2xl md:text-4xl uppercase font-bold mb-4 text-white tracking-wider'
               >
-                APEX <span className='text-blue-400'>FOOT</span>
+                apex <span className='text-blue-400'>football</span>
               </motion.h1>
               
               <motion.p 

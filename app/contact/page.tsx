@@ -8,7 +8,7 @@ const Contact  = () => {
                 <h1 className='text-2xl font-bold text-blue-500 uppercase text-center'>Contactez-nous</h1>
             </div>
             <div>
-                <form className='max-w-2xl mx-auto grid grid-cols-1 gap-4 shadow-md p-8 rounded-md'>
+                <form className='max-w-2xl mx-auto grid grid-cols-1 gap-4 shadow-md py-4 rounded-md'>
                     <div>
                         <label htmlFor="name" className=''>Nom</label>
                         <input type="text" id="name" name="name" className='w-full p-2 rounded-md bg-gray-100 border-none border-gray-300' />
