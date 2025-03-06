@@ -143,7 +143,7 @@ export default function PlayerDetail({ params }: any) {
               </div>
 
               <div className="border-t pt-6">
-                <h2 className="text-xl font-semibold mb-4">Informations supplémentaires</h2>
+                <h2 className="text-blue-500 font-semibold mb-4">Informations supplémentaires</h2>
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <p className="text-sm text-gray-500">Nationalité</p>
