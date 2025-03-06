@@ -30,7 +30,7 @@ const Presentation = () => {
   ]
   return (
     <div className='w-full'>
-      <div className='max-w-7xl mx-auto'>
+      <div className='max-w-7xl mx-auto py-16'>
         <div 
           className='relative h-[calc(100vh-64px)] w-full bg-cover bg-center bg-no-repeat overflow-hidden' 
           style={{backgroundImage: "url('/bgs1.jpg')"}}
