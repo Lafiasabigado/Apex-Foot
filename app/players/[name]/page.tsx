@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { ArrowLeft, Trophy, Target, Users, Calendar } from 'lucide-react'
 import Link from 'next/link'
 
-interface Player {
+interface Player extends any {
   firstname: string;
   lastname: string;
   nationality: string;
