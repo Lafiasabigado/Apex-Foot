@@ -35,19 +35,19 @@ const Partners = () => {
     
   ]
   return (
-    <div className='min-h-screen'>
-        <div className='max-w-7xl mx-auto py-16'>
-            <h1 className='text-2xl font-bold text-blue-500 uppercase text-center'>Nos partenaires</h1>
+    <div className='w-full py-16'>
+      <div className='max-w-7xl mx-auto'>
+        <h1 className='text-2xl font-bold text-blue-500 uppercase text-center mb-12'>
+          Nos partenaires
+        </h1>
+        <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 sm:gap-4 gap-12 px-4'>
+          {partners.map((partner) => (
+            <div key={partner.id} className='flex justify-center items-center'>
+              <Image src={partner.logo} alt={partner.name} width={100} height={100} />
+            </div>
+          ))}
         </div>
-        <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 sm:gap-4 gap-12'>
-           {
-            partners.map((partner) => (
-                <div key={partner.id} className='flex justify-center items-center'>
-                    <Image src={partner.logo} alt={partner.name} width={100} height={100} />
-                </div>
-            ))
-           }
-        </div>
+      </div>
     </div>
   )
 }

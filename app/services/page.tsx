@@ -67,7 +67,7 @@ const Services = () => {
       ];
     
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4">
+    <div className="w-full bg-gradient-to-b from-gray-50 to-gray-100 py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-2xl font-bold uppercase text-blue-500 sm:text-4xl mb-4">
