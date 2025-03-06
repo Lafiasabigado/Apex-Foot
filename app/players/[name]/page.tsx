@@ -118,46 +118,46 @@ export default function PlayerDetail({ params }: any) {
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="flex items-center">
                   <Users className="w-5 h-5 text-blue-500 mr-2" />
-                  <div>
-                    <p className="text-sm text-gray-500">Club</p>
+                  <div className='flex items-center gap-2'>
+                    <p className="text-sm text-gray-500">Club :</p>
                     <p className="font-medium">{player.club}</p>
                   </div>
                 </div>
 
                 <div className="flex items-center">
                   <Calendar className="w-5 h-5 text-blue-500 mr-2" />
-                  <div>
-                    <p className="text-sm text-gray-500">Âge</p>
+                  <div className='flex items-center gap-2'>
+                    <p className="text-sm text-gray-500">Âge :</p>
                     <p className="font-medium">{calculateAge(player.date_of_birthday)} ans</p>
                   </div>
                 </div>
 
                 <div className="flex items-center">
                   <Trophy className="w-5 h-5 text-blue-500 mr-2" />
-                  <div>
-                    <p className="text-sm text-gray-500">Buts</p>
+                  <div className='flex items-center gap-2'>
+                    <p className="text-sm text-gray-500">Buts :</p>
                     <p className="font-medium">{player.goals}</p>
                   </div>
                 </div>
 
                 <div className="flex items-center">
                   <Target className="w-5 h-5 text-blue-500 mr-2" />
-                  <div>
-                    <p className="text-sm text-gray-500">Passes décisives</p>
+                  <div className='flex items-center gap-2'>
+                    <p className="text-sm text-gray-500">Passes décisives :</p>
                     <p className="font-medium">{player.assists}</p>
                   </div>
                 </div>
               </div>
 
               <div className="border-t pt-6">
-                <h2 className="text-xl font-semibold mb-4">Informations supplémentaires</h2>
+                <h2 className="text-blue-500 font-semibold mb-4">Informations supplémentaires</h2>
                 <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-sm text-gray-500">Nationalité</p>
+                  <div className='flex items-center gap-2'>
+                    <p className="text-sm text-gray-500">Nationalité :</p>
                     <p className="font-medium">{player.nationality}</p>
                   </div>
-                  <div>
-                    <p className="text-sm text-gray-500">Date de naissance</p>
+                  <div className='flex items-center gap-2'>
+                    <p className="text-sm text-gray-500">Date de naissance :</p>
                     <p className="font-medium">
                       {new Date(player.date_of_birthday).toLocaleDateString('fr-FR')}
                     </p>
