@@ -44,7 +44,7 @@ const Presentation = () => {
             transition={{ duration: 0.8 }}
             className='relative z-10 h-full flex flex-col justify-center p-8 lg:p-16'
           >
-            <div className='max-w-2xl'>
+            <div className='max-w-2xl justify-center flex flex-col'>
               <motion.h1 
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
