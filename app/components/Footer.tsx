@@ -77,11 +77,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center text-sm">
                 <MapPin size={16} className="mr-2 text-blue-400" />
-                123 Rue du Football, Parakou
+                123 Rue du Football, Cotonou
               </li>
               <li className="flex items-center text-sm">
                 <Phone size={16} className="mr-2 text-blue-400" />
-                +229 97 00 00 00
+                +229 01 97 00 00 00
               </li>
               <li className="flex items-center text-sm">
                 <Mail size={16} className="mr-2 text-blue-400" />
@@ -97,7 +97,7 @@ const Footer = () => {
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} Apex Football. Tous droits réservés.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
+            <div className="space-x-6 mt-4 md:mt-0 hidden md:flex">
               <Link href="/privacy" className="text-sm text-gray-400 hover:text-blue-400 transition-colors">
                 Politique de confidentialité
               </Link>
