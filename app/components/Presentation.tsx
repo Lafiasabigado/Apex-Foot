@@ -33,7 +33,7 @@ const Presentation = () => {
       <div className='max-w-7xl mx-auto'>
         <div 
           className='relative h-screen w-full bg-cover bg-center bg-no-repeat overflow-hidden' 
-          style={{backgroundImage: "url('/bg2.jpg')"}}
+          style={{backgroundImage: "url('/bgs1.jpg')"}}
         >
           
           <div className='absolute inset-0 bg-gradient-to-r from-black/70 to-black/40'></div>
@@ -79,7 +79,7 @@ const Presentation = () => {
               </div>
 
               {/* Statistiques */}
-              <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mt-12'>
+              <div className='grid grid-cols-4 md:grid-cols-4 gap-6 mt-16'>
                 { stats.map((stat, index) => (
                   <div key={index} className='font-bold'>
                     <p className='text-xl md:text-2xl text-blue-400'>{ stat.index != 4 ? stat.value+'+' : stat.value+'%' }</p>
