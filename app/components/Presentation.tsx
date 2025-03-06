@@ -35,7 +35,7 @@ const Presentation = () => {
           className='relative h-screen w-full bg-cover bg-center bg-no-repeat overflow-hidden' 
           style={{backgroundImage: "url('/bg2.jpg')"}}
         >
-          {/* Overlay plus subtil */}
+          
           <div className='absolute inset-0 bg-gradient-to-r from-black/70 to-black/40'></div>
           
           <motion.div 
@@ -58,7 +58,7 @@ const Presentation = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className='text-sm md:text-base text-gray-300 mb-6 font-light leading-relaxed max-w-xl'
+                className='text-md md:text-base text-gray-300 mb-6 font-light leading-relaxed max-w-xl'
               >
                 Nous sommes une agence dédiée à la mise en valeur 
                 des footballeurs talentueux et à leur développement professionnel.
@@ -81,8 +81,8 @@ const Presentation = () => {
               {/* Statistiques */}
               <div className='grid grid-cols-2 md:grid-cols-4 gap-6 mt-12'>
                 { stats.map((stat, index) => (
-                  <div key={index} className='text-center'>
-                    <p className='text-xl md:text-2xl font-semibold text-blue-400'>{ stat.index != 4 ? stat.value+'+' : stat.value+'%' }</p>
+                  <div key={index} className='font-bold'>
+                    <p className='text-xl md:text-2xl text-blue-400'>{ stat.index != 4 ? stat.value+'+' : stat.value+'%' }</p>
                     <p className='text-xs text-gray-400 mt-1 uppercase tracking-wider'>{stat.label}</p>
                   </div>
                 ))}
