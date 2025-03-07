@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { ArrowLeft, Trophy, Target, Users, Calendar } from 'lucide-react'
 import Link from 'next/link'
 
-interface Player extends any {
+interface Player {
   firstname: string;
   lastname: string;
   nationality: string;
@@ -142,7 +142,7 @@ export default function PlayerDetail({ params }: any) {
                 </div>
               </div>
 
-              <div className="border-t pt-6">
+              <div className="border-t border-gray-200 pt-6">
                 <h2 className="text-blue-500 font-semibold mb-4">Informations supplémentaires</h2>
                 <div className="grid grid-cols-2 gap-4">
                   <div>

@@ -2,13 +2,26 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   try {
-    const response = await fetch("https://foot-api-0gcy.onrender.com/player?limit=8");
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    const apiToken = process.env.API_TOKEN;
+
+    if (!apiToken) {
+      throw new Error("Le token API est manquant !");
+    }
+
+    const response = await fetch(`${apiUrl}/player?limit=8`, {
+      headers: {
+        "Authorization": `Bearer ${apiToken}`,
+        "Content-Type": "application/json",
+      },
+    });
+
     if (!response.ok) {
       throw new Error("Erreur lors de la récupération des joueurs");
     }
+
     const data = await response.json();
-    
-    
+
     const cleanedResults = data.results.map((player: any) => ({
       ...player,
       image: player.image?.startsWith('http') ? player.image : `https://res.cloudinary.com${player.image}`
