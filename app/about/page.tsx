@@ -17,7 +17,7 @@ const About = () => {
               Nous les aidons à se faire repérer, à développer leur image et à booster leur carrière grâce à notre expertise et notre réseau de partenaires.
             </p>
           </div>
-          <div className='relative w-full h-[400px] hover:scale-105 transition-all duration-300'>
+          <div className='relative w-full h-[400px] border border-gray-50 sm:border-none hover:scale-105 transition-all duration-300'>
             <Image 
               src="/about/about3.png" 
               alt="Football Player" 
