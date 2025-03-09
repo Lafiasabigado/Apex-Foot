@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <div className='py-32'>
-      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+    <div className='py-16'>
+      <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50'>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
           <div>
             <h1 className='text-blue-500 uppercase text-2xl font-bold mb-6'>À propos de nous</h1>
@@ -17,7 +17,7 @@ const About = () => {
               Nous les aidons à se faire repérer, à développer leur image et à booster leur carrière grâce à notre expertise et notre réseau de partenaires.
             </p>
           </div>
-          <div className='relative w-full h-[400px] border border-gray-50 sm:border-none hover:scale-105 transition-all duration-300'>
+          <div className='relative w-full h-[400px] border border-gray-100 sm:border-none hover:scale-105 transition-all duration-300'>
             <Image 
               src="/about/about3.png" 
               alt="Football Player" 
