@@ -19,7 +19,7 @@ const About = () => {
           </div>
           <div className='relative w-full h-[400px] hover:scale-105 transition-all duration-300'>
             <Image 
-              src="/player4.jpg" 
+              src="/about/about3.png" 
               alt="Football Player" 
               fill 
               className="object-cover rounded-lg"
