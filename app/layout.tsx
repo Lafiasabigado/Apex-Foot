@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <ClerkProvider localization={{locale: "fr-FR"}}>
       <html lang="fr">
-        <body className={`${geistSans.variable} ${geistMono.variable} ${geistPoppins.variable} antialiased`}>
+        <body className={`${geistPoppins.variable} antialiased`}>
           <Navbar />
           <main>{children}</main>
           <Footer />

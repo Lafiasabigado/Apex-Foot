@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
-import { ArrowLeft, Trophy, Target, Users, Calendar } from 'lucide-react'
+import { ArrowLeft, Trophy, Target, Users, Calendar, CalendarDays } from 'lucide-react'
 import Link from 'next/link'
 
 interface Player {
@@ -111,34 +111,22 @@ export default function PlayerDetail({ params }: any) {
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="flex items-center">
                   <Users className="w-5 h-5 text-blue-500 mr-2" />
-                  <div>
-                    <p className="text-sm text-gray-500">Club</p>
-                    <p className="font-medium">{player.club}</p>
-                  </div>
+                  <p className="font-medium text-gray-500">{player.club}</p>
                 </div>
 
                 <div className="flex items-center">
-                  <Calendar className="w-5 h-5 text-blue-500 mr-2" />
-                  <div>
-                    <p className="text-sm text-gray-500">Âge</p>
-                    <p className="font-medium">{calculateAge(player.date_of_birthday)} ans</p>
-                  </div>
+                 <CalendarDays className="w-5 h-5 text-blue-500 mr-2" />
+                 <p className="font-medium text-gray-500">{calculateAge(player.date_of_birthday)} ans</p>
                 </div>
 
                 <div className="flex items-center">
                   <Trophy className="w-5 h-5 text-blue-500 mr-2" />
-                  <div>
-                    <p className="text-sm text-gray-500">Buts</p>
-                    <p className="font-medium">{player.goals}</p>
-                  </div>
+                  <p className="font-medium text-gray-500">{player.goals} Buts</p>
                 </div>
 
                 <div className="flex items-center">
-                  <Target className="w-5 h-5 text-blue-500 mr-2" />
-                  <div>
-                    <p className="text-sm text-gray-500">Passes décisives</p>
-                    <p className="font-medium">{player.assists}</p>
-                  </div>
+                    <Target className="w-5 h-5 text-blue-500 mr-2" />
+                    <p className="font-medium text-gray-500">{player.assists} Passes</p>
                 </div>
               </div>
 
